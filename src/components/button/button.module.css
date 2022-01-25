@@ -1,0 +1,25 @@
+.button {
+  background-color: rgb(29, 155, 240);
+  outline: none;
+  border: 0;
+  width: 100%;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(26, 140, 216);
+}
+
+.disabled {
+  background-color: rgba(29, 155, 240, 0.3);
+  pointer-events: none;
+}
+
+/* .disabled:hover {
+  background-color: rgba(29, 155, 240, 0.3);
+} */

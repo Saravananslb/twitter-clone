@@ -1,0 +1,91 @@
+.createTweetContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.profileCont {
+  flex-basis: 70px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.newTweetInput {
+  height: 50px;
+  font-size: 20px;
+  outline: none;
+  border: 0;
+  width: 100%;
+}
+
+.createTweetInputCont {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.dataCont {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.iconContainer > svg {
+  height: 20px;
+  fill: rgb(29, 155, 240);
+}
+
+.iconContainer {
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.iconContainer:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.footer {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.empty {
+  flex-grow: 1;
+}
+
+.tweetButton > button {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.profileCont svg path {
+  fill: #a3a3a3;
+}
+
+.uploadedDataCont {
+  width: 100%;
+}
+
+.uploadedImg {
+  width: 100%;
+}
+
+.uploadedImageCancel {
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.uploadedImageCancel:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}

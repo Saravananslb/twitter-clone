@@ -1,0 +1,22 @@
+.homeContainer {
+  height: 150vw;
+}
+
+.homeContainer {
+  padding: 20px 0;
+}
+
+.pageHead {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+.signInButton {
+  margin-bottom: 30px;
+}
+
+.signInButton > button {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,95 @@
+.tweetCardContainer {
+  display: flex;
+  border: 1px solid #f2f2f2;
+  padding-top: 30px;
+  cursor: pointer;
+  /* padding-bottom: 20px; */
+}
+
+.tweetCardContainer:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.profileCont {
+  flex-basis: 70px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.userName {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.dataCont {
+  flex-grow: 1;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.msgContainer {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.imgContainer {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tweetImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.iconContainer {
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer svg {
+  height: 20px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer > div {
+  width: 100%;
+}
+
+.footer > div {
+  display: flex;
+  align-items: center;
+  /* margin-left: 10px; */
+}
+
+.iconContainer span {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.iconContainer:hover .footerOpt {
+  background-color: rgba(29, 155, 240, 0.1);
+  border-radius: 50%;
+}
+
+.profileImg {
+  width: 50px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.profileImg > img {
+  width: 90%;
+  border-radius: 100%;
+}

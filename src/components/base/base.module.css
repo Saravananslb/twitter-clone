@@ -1,0 +1,137 @@
+.baseContainer {
+  display: grid;
+  /* border: 1px solid black; */
+  justify-content: center;
+  grid-template-columns: 275px 600px 350px;
+}
+
+/* .baseContainer > div {
+  border: 1px solid black;
+} */
+
+/* .baseNav {
+  position: relative;
+} */
+
+.navContent {
+  position: fixed;
+}
+
+.navContent > div > div {
+  /* height: 50px; */
+  /* border: 1px solid black; */
+  width: fit-content;
+  /* display: flex;
+  ali */
+  padding: 16px;
+  border-radius: 9999px;
+  margin: 20px;
+  /* margin-left: 30px; */
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+}
+
+.navContent > div > div svg {
+  height: 1.6rem;
+}
+
+.navContent > div > div span {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.navContent > div:hover > div {
+  background-color: rgba(15, 20, 25, 0.1);
+}
+
+.navContent > div {
+  cursor: pointer;
+}
+
+.twitterLogo {
+  fill: rgb(29, 155, 240);
+}
+
+/* .navContainer {
+  position: fixed;
+} */
+
+.navFooter {
+  position: absolute;
+  bottom: 0;
+  padding: 16px;
+  margin: 20px;
+}
+
+.footerContainer {
+  display: flex;
+  margin: 10px;
+}
+
+.tweetButton {
+  width: 100% !important;
+  margin-left: 0;
+}
+
+.tweetButtonContainer:hover > .tweetButton {
+  background-color: transparent;
+}
+
+.tweetButtonChild {
+  padding: 5px 0;
+}
+
+/* .twitterIcon {
+  margin-left: -10px;
+} */
+
+.tweetButtonContainer {
+  margin-left: -15px;
+  margin-right: 15px;
+}
+
+.othersContaienr {
+  border-radius: 20px;
+  background-color: rgb(247, 249, 249);
+  margin: 20px;
+  /* padding-left: 20px; */
+  position: fixed;
+  width: 350px;
+}
+
+.othersHead {
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.userName {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tweet {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 20px;
+  max-height: 100px;
+}
+
+.message {
+  font-size: 13px;
+}
+
+.tweet:hover {
+  background-color: #f2f2f2;
+}
+
+.othersFooter {
+  height: 50px;
+  width: 100%;
+}
