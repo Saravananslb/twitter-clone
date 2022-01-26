@@ -12,9 +12,9 @@ import { TweetCard } from "../../components/tweetCard";
 import TestTweetImg2 from "../../assets/test/testTweetImg2.jpeg";
 import { ImageOverlay } from "../../components/imageOverlay";
 import { Context } from "../../store/store";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ADD_ACTIVE_TWEET } from "../../store/action.types";
-import { getTweet } from "../../services/tweet.service";
+import { getTweet, getTweetComment } from "../../services/tweet.service";
 
 export const ViewTweet = () => {
   const [viewImage, setViewImage] = useState(false);
@@ -23,14 +23,20 @@ export const ViewTweet = () => {
 
   const { state, dispatch } = useContext(Context);
 
+  const [comment, setComment] = useState([]);
+
   const navigate = useNavigate();
 
   const { activeTweet } = state;
 
+  const { tweetId } = useParams();
+
   useEffect(() => {
-    getTweet(activeTweet).then((data) => {
-      setTweet(data);
-    });
+    console.log(tweetId);
+    // getTweet(activeTweet).then((data) => {
+    //   setTweet(data);
+    // });
+    getTweetComment(tweetId).then(data => setComment(data.comment))
   }, []);
 
   const onViewImage = () => {
@@ -105,7 +111,7 @@ export const ViewTweet = () => {
           <Reply />
         </div>
         <div>
-          {activeTweet.comments?.map((comment, index) => (
+          {comment?.map((comment, index) => (
             <TweetCard
               userName={comment.userName}
               tweetMsg={comment.name}

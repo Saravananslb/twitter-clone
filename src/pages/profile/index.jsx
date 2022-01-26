@@ -10,7 +10,7 @@ import { getUserTweet, addLike, reTweet } from '../../services/tweet.service';
 import { Context } from "../../store/store";
 import { ADD_ACTIVE_TWEET } from "../../store/action.types";
 import { useNavigate } from "react-router-dom";
-const editIcon = require('../../assets/edit-icon.svg');
+import {ReactComponent as EditIcon} from '../../assets/edit-icon.svg';
 
 export const Profile = () => {
   const [viewImage, setViewImage] = useState(false);
@@ -119,7 +119,7 @@ export const Profile = () => {
             onClick={() => onViewImage(user.profilePic)}
           >
             <img className={styles.profileImg} src={user.profilePic} alt="" />
-            <img src={editIcon} />
+            <img src={EditIcon} />
           </div>
 
           <div className={styles.userName}>{user.name}</div>

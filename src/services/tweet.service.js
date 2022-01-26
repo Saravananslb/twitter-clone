@@ -70,3 +70,18 @@ export const getUserTweet = () => {
     }
   ).then((data) => data.json());
 }
+
+
+export const getTweetComment = (tweetId) => {
+  return fetch(
+    `${API}/comment/get-comment?tweetId=${tweetId}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        'authtoken': cookies.get('authtoken')
+      }
+      
+    }
+  ).then((data) => data.json());
+}
